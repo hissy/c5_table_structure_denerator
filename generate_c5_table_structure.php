@@ -101,13 +101,13 @@ foreach ($sx->table as $x) {
             $type = 'blob';
         }
         
-        $unsigned = (isset($field->UNSIGNED) || $field->unsigned) ? 'yes' : '';
-        $notnull = (isset($field->NOTNULL) || $field->notnull) ? 'yes' : '';
+        $unsigned = (isset($field->UNSIGNED) || isset($field->unsigned)) ? 'yes' : '';
+        $notnull = (isset($field->NOTNULL) || isset($field->notnull)) ? 'yes' : '';
         $default = (isset($field->DEFAULT)) ? $field->DEFAULT : '';
         $default = (isset($field->default)) ? $field->default : $default;
         $default_value = ($default) ? $default['value'] : '';
-        $key = (isset($field->KEY) || $field->key) ? 'yes' : '';
-        $autoincrement = (isset($field->AUTOINCREMENT) || $field->autoincrement) ? 'yes' : '';
+        $key = (isset($field->KEY) || isset($field->key)) ? 'yes' : '';
+        $autoincrement = (isset($field->AUTOINCREMENT) || isset($field->autoincrement)) ? 'yes' : '';
         
         $export->addRow(array($name, $type, $size, $unsigned, $notnull, $default_value, $key, $autoincrement));
     }
