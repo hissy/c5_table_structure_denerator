@@ -1,0 +1,120 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "8a1952da34a961557e5be421f9fddd90",
+    "packages": [
+        {
+            "name": "aura/cli",
+            "version": "2.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/auraphp/Aura.Cli.git",
+                "reference": "86565b72309c298b4222f1f37fb7e502ece1aebe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/auraphp/Aura.Cli/zipball/86565b72309c298b4222f1f37fb7e502ece1aebe",
+                "reference": "86565b72309c298b4222f1f37fb7e502ece1aebe",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "aura": {
+                    "type": "library",
+                    "config": {
+                        "common": "Aura\\Cli\\_Config\\Common"
+                    }
+                },
+                "branch-alias": {
+                    "dev-develop-2": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Aura\\Cli\\": "src/",
+                    "Aura\\Cli\\_Config\\": "config/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Aura.Cli Contributors",
+                    "homepage": "https://github.com/auraphp/Aura.Cli/contributors"
+                }
+            ],
+            "description": "Provides the equivalent of request (Context) and response (Stdio) classes for a command line environment, including Getopt support.",
+            "homepage": "https://github.com/auraphp/Aura.Cli",
+            "keywords": [
+                "cli",
+                "command",
+                "command line",
+                "getopt",
+                "options",
+                "stdio"
+            ],
+            "time": "2015-01-19 22:38:16"
+        },
+        {
+            "name": "fusonic/spreadsheet-export",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fusonic/fusonic-spreadsheetexport.git",
+                "reference": "64a84ae36f7f2f8a68a5958c95370263a5d31942"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fusonic/fusonic-spreadsheetexport/zipball/64a84ae36f7f2f8a68a5958c95370263a5d31942",
+                "reference": "64a84ae36f7f2f8a68a5958c95370263a5d31942",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Fusonic\\SpreadsheetExport": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fusonic",
+                    "homepage": "http://www.fusonic.net"
+                }
+            ],
+            "description": "Library to create simple exports to CSV/TSV/ODS in PHP",
+            "homepage": "https://github.com/fusonic/fusonic-spreadsheetexport",
+            "keywords": [
+                "csv",
+                "export",
+                "ods",
+                "tsv"
+            ],
+            "time": "2014-05-28 17:30:14"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "fusonic/spreadsheet-export": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
