@@ -7,17 +7,18 @@ Exports table strucrues of concrete5 as ODS (Open Document Spreadsheet) file for
 ### Clone this repository
 
 ```
-git clone https://github.com/hissy/c5_table_structure_denerator.git
+$ git clone https://github.com/hissy/c5_table_structure_denerator.git
 ```
 
 ### Install dependencies with Composer
 
 ```
-composer install
+$ cd c5_table_structure_denerator
+$ composer install
 ```
 
 ### Generate from concrete/config/db.xml
 
 ```
-php generate_c5_table_structure.php ../concrete5/web/concrete/config/db.xml 
+$ php generate_c5_table_structure.php ../concrete5/web/concrete/config/db.xml 
 ```
